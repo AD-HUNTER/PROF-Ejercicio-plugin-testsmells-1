@@ -50,6 +50,23 @@
 				<version>2.22.0</version>
 			</plugin>
 
+            <plugin>
+                <groupId>es.upm.grise.profundizacion</groupId>
+                <artifactId>pluginEjercicio</artifactId>
+                <version>1.0-SNAPSHOT</version>
+
+                <executions>
+                    <execution>
+                        <id>detect-test-smells</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>detect-smells</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+
 		</plugins>
 	</build>
 
